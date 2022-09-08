@@ -311,7 +311,7 @@ namespace CryptorNew
         private static string DecryptionSeedBuilder()
         {
             char seed_char = Convert.ToChar(Console.ReadLine());    //введенный символ конвертится из string в char
-            int seed_char_int = (int)seed_char;                     //далее извлекается код символа
+            int seed_char_int = seed_char;                     //далее извлекается код символа
             string seed_string = "!-" + seed_char_int + "-!";       //и строится полноценная строка с маркерами начала\конца seed'a
             return seed_string;
         }
